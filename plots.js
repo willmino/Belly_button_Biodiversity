@@ -101,7 +101,7 @@ function buildCharts(sample) {
       y:sample_values,
       text:otu_labels,
       mode:'markers',
-      marker:{color:otu_ids,size:sample_values,colorscale:'PuBu'}
+      marker:{color:otu_ids,size:sample_values,colorscale:'Blues'}
     }]
     // Deliverable 2: 2. Create the layout for the bubble chart.
     bubbleLayout = {
@@ -126,10 +126,10 @@ function buildCharts(sample) {
           axis: { range: [0, 10] },
           steps: [
             { range: [0, 2], color: "white" },
-            { range: [2, 4], color: "skyblue" },
+            { range: [2, 4], color: "hsl(230, 100%, 90%)" },
             { range: [4, 6], color: "turquoise" },
-            { range: [6, 8], color: "blue" },
-            { range: [8, 10], color: "darkblue" }
+            { range: [6, 8], color: "hsl(230, 100%, 50%)" },
+            { range: [8, 10], color: "navy" }
           ]
           
         }

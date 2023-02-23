@@ -118,7 +118,7 @@ function buildCharts(sample) {
     var gaugetrace = [{
       domain: { x: [0, 1], y: [0, 1] },
         value: wfrequency,
-        title: {text: "Scrubs Per Week"},
+        title: {text: document.getElementById("gauge").getAttribute("text")},
         type: "indicator",
         mode: "gauge+number",
         gauge: {
@@ -139,7 +139,10 @@ function buildCharts(sample) {
 
     // Deliverable 3: 5. Create the layout for the gauge chart.
     var gaugeLayout = {title:{text:"Belly Button Washing Frequency",
-                       font:{weight:"bold"}
+                       font:{
+                             size:28,
+                             family: "Arial, sans-serif",
+                             weight:"bold"}
                       }, 
                       width: 600,
                       height: 400,

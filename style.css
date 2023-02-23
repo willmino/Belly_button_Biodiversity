@@ -1,7 +1,7 @@
 
 
-  #cheese{
-    display: none
+  #body{
+    color:turquoise;
 }
 
 
@@ -10,9 +10,9 @@ color:navy;
 font-weight: bold;
 }
 
-#tester{
-  color:darkblue;
-  font-weight: bold;
+#tronic{
+  display:none
   }
+
 
 
